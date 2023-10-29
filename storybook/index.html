@@ -1,14 +1,140 @@
-<h1>Varbase Storybook</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
 
-<p>This is a placeholder folder to build the storybook on builds.</p>
+    <title>@storybook/cli - Storybook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<p>Not for <code>production</code>, only for <code>development</code> or <code>staging</code>.</p>
+    
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    
+    <link
+      rel="prefetch"
+      href="./sb-common-assets/nunito-sans-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="prefetch"
+      href="./sb-common-assets/nunito-sans-bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="./sb-common-assets/fonts.css" />
 
-Follow with <a href="https://docs.varbase.vardot.com/v/10.0.x/developers/theme-development-with-varbase/integration-of-varbase-with-storybook">Integration of Varbase with Storybook</a>
+    <link href="./sb-manager/runtime.js" rel="modulepreload" />
 
-To build the static storybook run
+    
+    <link href="./sb-addons/links-0/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/essentials-controls-1/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/essentials-actions-2/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/essentials-backgrounds-3/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/essentials-viewport-4/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/essentials-toolbars-5/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/essentials-measure-6/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/essentials-outline-7/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/lullabot-storybook-drupal-addon-8/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/a11y-9/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/root-attribute-10/register-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/rtl-direction-esm-preset-11/manager-bundle.js" rel="modulepreload" />
+       
 
-<code>
-yarn install
-yarn build-storybook
-</code>
+    <style>
+      #storybook-root[hidden] {
+        display: none !important;
+      }
+    </style>
+
+    
+  </head>
+  <body>
+    <div id="root"></div>
+
+    
+    <script>
+      
+        
+          window['FEATURES'] = {
+  "warnOnLegacyHierarchySeparator": true,
+  "buildStoriesJson": false,
+  "storyStoreV7": true,
+  "argTypeTargetsV7": true,
+  "legacyDecoratorFileOrder": false
+};
+        
+      
+        
+          window['REFS'] = {};
+        
+      
+        
+          window['LOGLEVEL'] = "info";
+        
+      
+        
+          window['DOCS_OPTIONS'] = {
+  "defaultName": "Docs",
+  "autodocs": "tag"
+};
+        
+      
+        
+          window['CONFIG_TYPE'] = "PRODUCTION";
+        
+      
+        
+      
+        
+      
+        
+      
+    </script>
+    
+
+    <script type="module">
+      import './sb-manager/runtime.js';
+
+      
+      import './sb-addons/links-0/manager-bundle.js';
+      
+      import './sb-addons/essentials-controls-1/manager-bundle.js';
+      
+      import './sb-addons/essentials-actions-2/manager-bundle.js';
+      
+      import './sb-addons/essentials-backgrounds-3/manager-bundle.js';
+      
+      import './sb-addons/essentials-viewport-4/manager-bundle.js';
+      
+      import './sb-addons/essentials-toolbars-5/manager-bundle.js';
+      
+      import './sb-addons/essentials-measure-6/manager-bundle.js';
+      
+      import './sb-addons/essentials-outline-7/manager-bundle.js';
+      
+      import './sb-addons/lullabot-storybook-drupal-addon-8/manager-bundle.js';
+      
+      import './sb-addons/a11y-9/manager-bundle.js';
+      
+      import './sb-addons/root-attribute-10/register-bundle.js';
+      
+      import './sb-addons/rtl-direction-esm-preset-11/manager-bundle.js';
+      
+    </script>
+
+    <link href="./sb-preview/runtime.js" rel="prefetch" as="script" />
+  </body>
+</html>
