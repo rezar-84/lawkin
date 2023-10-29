@@ -1,4 +1,4 @@
-name: lawkin
+name: lawkin base theme
 core_version_requirement: ^10
 engine: twig
 type: theme
