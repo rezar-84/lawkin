@@ -13,8 +13,10 @@ dependencies:
     - field.field.node.article.field_tags
     - image.style.thumbnail
     - node.type.article
+    - workflows.workflow.varbase_simple_workflow
   module:
     - comment
+    - content_moderation
     - image
     - imce
     - path
@@ -159,29 +161,26 @@ content:
     settings:
       include_locked: true
     third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   path:
     type: path
     weight: 14
     region: content
     settings: {  }
     third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    weight: 11
+  simple_sitemap:
+    weight: 10
     region: content
-    settings:
-      display_label: true
+    settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     weight: 15
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    weight: 12
     region: content
     settings:
       display_label: true
@@ -192,8 +191,14 @@ content:
     region: content
     settings:
       size: 60
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: 'Enter title here'
+    third_party_settings:
+      length_indicator:
+        indicator: true
+        indicator_opt:
+          optimin: 15
+          optimax: 50
+          tolerance: 10
   uid:
     type: entity_reference_autocomplete
     weight: 8
@@ -204,4 +209,15 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  publish_on: true
+  publish_state: true
+  unpublish_on: true
+  unpublish_state: true
+  promote: true
+  sticky: true

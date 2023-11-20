@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+id: contact_message--feedback
+disabled: true
+path: contact_message/feedback
+resourceType: contact_message--feedback
+resourceFields: {  }

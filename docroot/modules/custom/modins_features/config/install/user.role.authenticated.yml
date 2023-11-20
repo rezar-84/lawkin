@@ -3,16 +3,30 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
+    - filter.format.webform_default
+    - media.type.audio
+    - media.type.file
+    - media.type.gallery
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - node.type.landing_page_lb
+    - node.type.page
+    - taxonomy.vocabulary.blog_categories
+    - taxonomy.vocabulary.tags
   module:
-    - comment
-    - contact
-    - file
     - filter
-    - gavias_hook_themer
+    - google_analytics
+    - media
+    - node
     - search
     - shortcut
     - system
+    - taxonomy_access_fix
+    - tour
+    - userprotect
+    - varbase_dashboards
 id: authenticated
 label: 'Authenticated user'
-weight: 1
+weight: -9
 is_admin: false

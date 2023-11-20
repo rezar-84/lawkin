@@ -12,3 +12,4 @@ effects:
       width: 680
       height: 460
       anchor: center-center
+pipeline: __default__
