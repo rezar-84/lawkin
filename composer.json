@@ -180,13 +180,13 @@
             ]
         },
         "enable-patching": true,
-        "composer-exit-on-patch-failure": true,
+        "composer-exit-on-patch-failure": false,
         "patchLevel": {
             "drupal/core": "-p2"
         },
         "patches": {
             "drupal/ui_patterns_settings":{
-                "[3409221] ui_patterns_settings.module - array_unshift()": "https://git.drupalcode.org/project/ui_patterns_settings/-/merge_requests/21.patch"
+                                "patchlocal1": "https://www.drupal.org/files/issues/2024-01-11/ui_patterns_settings--2023-12-17--3409221-3--mr-21--39e896da.patch"
             }
 
         }
