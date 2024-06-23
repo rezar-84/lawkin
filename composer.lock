@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3de360ee2e7301e1c713ffb7c35ddc16",
+    "content-hash": "114007e430dad0befee5b7c0807e5b5a",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -29877,7 +29877,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "vardot/varbase": 20,
         "drupal/rules": 15,
         "drupal/config_update": 15,
         "drupal/facets": 10,
