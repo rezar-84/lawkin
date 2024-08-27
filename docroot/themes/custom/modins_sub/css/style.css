@@ -1,5 +1,5 @@
 /* Hide vertical tabs on webform pages */
-.webform-page .vertical-tabs {
+.webform-page .vertical-tabs, .vertical-tabs {
     display: none;
   }
   
