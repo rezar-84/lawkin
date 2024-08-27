@@ -1,0 +1,5 @@
+/* Hide vertical tabs on webform pages */
+.webform-page .vertical-tabs {
+    display: none;
+  }
+  
