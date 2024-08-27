@@ -3,3 +3,162 @@
     display: none;
   }
   
+  form#webform-submission-online-consult-add-form , .webform-ajax-form-wrapper{
+    max-width: 640px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+  
+  .progress-title {
+    display: none;
+  }
+  .progress-marker::before{
+    
+      border-radius: 0.3rem !important;
+      width: 95%;
+      font-size: 1px;
+    
+  }
+  .progress-title{
+    display: none;
+  }
+  .webform-submission-form .form-item  label {
+    display: inline;
+    color: #333;
+  }
+
+  .webform-submission-form .form-item input[type="radio"] + label {
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    background-color: #9588E8;
+    border-radius: 2rem;
+    font-size: 18px;
+    padding: 16px 25px 14px;
+    line-height: 24px;
+}
+.webform-submission-form .form-item input[type=radio]:hover + label  {
+  background-color: #58ba83 !important;
+  color: #fff !important;
+}
+
+.webform-submission-form .form-item input[type="radio"]:checked + label:before , .webform-options-display-buttons input:checked + label.webform-options-display-buttons-label::before
+  {
+  content: '✓';
+}
+
+.webform-submission-form .form-item input[type="radio"]:checked + label{
+  background-color: #C4DCF3;
+  color: #020D2B;
+}
+.webform-submission-form .form-item input[type="radio"]{
+  height: 0;
+  width: 0;
+  display: none;
+}
+
+.mb-3{    margin-bottom: 1rem !important;
+  background: #fffcf6;
+}
+
+.webform-submission-online-consult-form {
+  background: #E1E6EB;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.webform-progress-tracker .progress-step:hover .progress-marker::before, .webform-progress-tracker .progress-step .progress-marker::after{
+  background: #020D2B !important;
+}
+.webform-progress-tracker .progress-step:hover .progress-marker::before{
+  background: #fff !important;
+}
+.webform-progress-tracker .progress-step.is-complete .progress-marker::before, .webform-progress-tracker .progress-step.is-complete:hover .progress-marker::before, .webform-progress-tracker .progress-step.is-complete .progress-marker::after {
+  background-color: #9588E8;
+}
+.webform-progress-tracker .progress-step:not(.is-active){
+  background-color: #E1E6EB;
+
+}
+.progress-step.is-active .progress-marker::before {
+  background-color: #C4DCF3;
+}
+.webform-progress-tracker .progress-step.is-active:hover .progress-marker::before {
+  background-color: #C4DCF3;
+}
+
+.webform-progress-tracker .progress-step:not(.is-active) , .webform-progress-tracker .progress-step:hover .progress-marker::before {
+  background-color: #dce2da;
+}
+.webform-progress-tracker .progress-step .progress-marker::after{
+  display: none;
+}
+
+.btn-primary {
+    background: #C4DCF3;
+    border-radius: 0.3rem;
+    border-color: #C4DCF3;
+}
+.webform-submission-form .form-item input{
+display: inline;
+min-height: 42px;
+width: auto;
+
+}
+.webform-options-display-buttons label.webform-options-display-buttons-label{
+  border: none !important ;
+  border-radius: 20px !important;
+  color: #020D2B !important;
+  background-color: #C4DCF3 !important;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 16px 25px 14px;
+}
+
+.webform-options-display-buttons label.webform-options-display-buttons-label:hover{
+  color: #fff !important;
+  background-color: #9588E8 !important;
+
+}
+
+.webform-options-display-buttons input:checked + label.webform-options-display-buttons-label {
+ border: 1px solid #9588E8  !important; 
+
+}
+.webform-button--previous, .webform-button--next {
+  width: 48%;
+  margin-bottom: 9px;
+}
+.webform-submission-form .form-actions {
+  width: 72%;
+  margin: 0 auto;
+  float: none;
+}
+
+.webform-submission-form .description, .webform-confirmation {
+  background: #def6d9;
+  color: green;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.webform-confirmation {
+  margin: 2rem;
+}
+
+.webform-custom-options-button {
+
+    border: 3px solid #1dc0cc;
+    border-radius: 20px;
+    background-color: #1dc0cc;
+  
+    color: #fff;
+    cursor: pointer;
+  }
+  .webform-custom-options-button:hover{
+    background-color:  #9588E8 ;
+    color: #fff;
+  }
+  .webform-custom-options-button[data-option-value][aria-checked=true]{
+    color: #fff;
+    background-color: #020D2B;
+  }
